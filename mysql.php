@@ -1,4 +1,4 @@
 <?php
 
-echo "hello lokemdra saini "
+echo "hello lokemdra "
 ?>
