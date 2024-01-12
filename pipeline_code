@@ -1,0 +1,19 @@
+pipeline{
+   agent any
+   enviroment{
+       staging_server="id address"
+   }
+   stages{
+     stage('deploy to remote'){
+         steps{
+           sh '''
+              for fileNAme in `find ${WORKSPACE} -type -f mmin -10 | grep -v ".git |jenknsfile""`
+              do
+                  fil=$(echo ${filename} | sed 's/ /' | awk {'print' $2' })
+                  scp -r ${WORKSPACE}${fil} root@${staging_server:/var/www/html/directory}${fil}
+              done
+           '''
+         }
+      }
+    }
+} 
