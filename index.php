@@ -1,8 +1,4 @@
-<html>
- <head>
-  <title>Index</title>
- </head>
- <body>
- <?php echo '<p>Hello world from PHP! loki saini !!</p>'; ?> 
- </body>
-</html>
+<?php
+
+echo "hello lokendra saini R"
+?>
