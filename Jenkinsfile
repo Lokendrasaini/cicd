@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        staging_server="13.127.212.20"
+        staging_server="13.234.32.17"
     }
     stages{
         stage('Deploy to Remote'){
